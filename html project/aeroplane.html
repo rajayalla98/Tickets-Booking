@@ -1,0 +1,332 @@
+
+<html>
+<head><title>
+  flights
+</title>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+
+body
+ {
+  animation: color-me-in 5000s infinite;
+ }
+
+  @keyframes color-me-in {
+  0% {
+    background: white;
+  }
+  25% {
+    background: white;
+  }
+  50% {
+    background:white;
+  }
+  100%
+  {
+  background: white;
+  }
+}
+
+.image {
+   position: relative;
+
+}
+
+#keka {
+   position: absolute;
+   top: 100px;
+   left: 0;
+   width: 100%;
+}
+
+#meka{
+position:absolute;
+top:1260px;
+left:0;
+width:100%;
+}
+
+#enduku{
+position:absolute;
+top:160px;
+left:0;
+width:100%;
+
+}
+#juka{
+position:absolute;
+top:1200px;
+left:990px;
+width:100%;
+}
+
+#neka{
+position:absolute;
+top:1550px;
+left:900px;
+width:100%;
+}
+
+
+
+ul {
+ list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:  #FFC300 ;
+}
+
+li {
+    float: left;
+}
+
+li a {
+  display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+
+li a:hover {
+    background-color:  #f9a825 ;
+}
+
+.button {
+  border-radius: 8px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 230px;
+  height:45px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+
+}
+#shirt {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    height:55px;
+    width:100%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+    
+    #shirt:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<div id="first" height="30%" width="100%" style="background-color:#1a237e ">
+<br><h1 style="color:red"><center><i> &emsp;&emsp;&emsp;ULTIMATE TRAVELS</center></i></h1>
+</div>
+
+
+
+
+
+<div  class="image" height="50%" width="100%" >
+<img src="http://www.thomas-kinkade-gallery.com/image/data/Holidays/A-Christmas-Story.jpg" style="width:100%; height:50%">
+<h1 id="keka" style="color:  #fafafa;font-size:40px" >&emsp;&emsp;&emsp;WINTER WARMERS<h1>
+<center><h2 id="enduku" style="color: #e0f7fa;font-size:25px"><i>up to 40% off on flight tickets</i></h2></center>
+</div>
+
+<ul>
+
+  <li><a href="p.html">&emsp;Plan your travel</a></li>
+  <li><a href="p.html">&emsp;Travel information</a></li>
+  <li><a href="#meka">&emsp;Our previlage</a></li>
+  <li><a href="#bookt">&emsp;Book tickets</a></li>
+
+</ul>
+
+
+
+
+
+
+
+
+
+
+<div>
+<div style="float:left" height="275px" width="550px%">
+<br>
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<img src="http://www.jetairways.com/Images/HP2/Bengaluru-Singapore-Eco-700x384.jpg" style="width:550px;height:275px">&emsp;&emsp;
+</div>
+
+
+
+<div id="bookt" style="float:left" class="w3-content w3-display-container"><br>
+  <img class="mySlides" src="http://www.jetairways.com/Images/HP2/ind-hkg-700x384.jpg" style="width:540px;height:275px">
+  <img class="mySlides" src="http://www.jetairways.com/Images/HP2/trz-auh-700x384.jpg" style="width:540px;height:275px">
+  <img class="mySlides" src="http://www.jetairways.com/Images/HP2/JP-POM-Nov-700x384.jpg" style="width:540px;height:275px">
+
+  <a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+  <a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+  <br><br><br><br>
+</div>
+<div style="float:right">
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+<div style="float:left">
+
+<h1 style="text-align:center;font-family:arial"><b>&emsp;&emsp;&emsp;Get Great Deals On Flight</b></h1>
+<form>
+  <span style="font-family:arial;font-size:18px;">
+&emsp;&emsp;&emsp;<input type="radio" id="radio1" name="ONE WAY" value="onclick"><b >ONE WAY</b>
+&emsp;&emsp;&emsp;
+<input type="radio" id="radio2" name="ONE WAY" value="onclick"><b>ROUND TRIP</b>
+&emsp;&emsp;<b>Travellers:</b><select id="dropdownid" name="dropdown" value="">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option><br>
+</select>
+
+<br><br>
+&emsp;&emsp;<input type="text" id="fromid" name="from" placeholder="from" >
+&emsp;&emsp;<input type="text" id="toid" name="to" placeholder="to">
+&emsp;&emsp;<label><b>Departing</b></label>:<input type="number" value="">
+&emsp;&emsp;<b>Returning:</b><input type="number" value="">
+
+</span>
+</form>
+<center>
+<button onclick="test()" class="button"><span style="margin-top:-20px">check rates</span></button><br><br><br><br>
+<!--<button onclick="test()" >hai dude</button>-->
+</center>
+</div>
+
+<script>
+function test()
+{
+var x=document.getElementById("radio1").checked;
+var y=document.getElementById("radio2").checked;
+var z=document.getElementById("fromid").value;
+
+z = z.toLowerCase();
+var a=document.getElementById("toid").value;
+a = a.toLowerCase();
+var b=document.getElementById("dropdownid").value;
+cost=0;
+
+if((x!="" || y!="") && z!="" && a!="")
+{
+if(z=="chennai" && a=="hyderabad" && x==true){cost=4500;}else if(z=="chennai" && a=="hyderabad" && x==false){cost=9045;}
+if(z=="hyderabad" && a=="chennai" && x==true){cost=4000;}else if(z=="hyderabad" && a=="chennai" && x==false){cost=7589;}
+if(z=="chennai" && a=="bengaluru" && x==true){cost=3200;}else if(z=="chennai" && a=="bengaluru" && x==false){cost=5200;}
+if(z=="bengaluru" && a=="chennai" && x==true){cost=3000;}else if(z=="bengaluru" && a=="chennai" && x==false){cost=5221;}
+if(z=="chennai" && a=="delhi" && x==true){cost=6200;}else if(z=="chennai" && a=="delhi" && x==false){cost=10989;}
+if(z=="delhi" && a=="chennai" && x==true){cost=6500;}else if(z=="delhi" && a=="chennai" && x==false){cost=11221;}
+if(z=="chennai" && a=="mumbai" && x==true){cost=5388;}else if(z=="chennai" && a=="mumbai" && x==false){cost=10589;}
+if(z=="mumbai" && a=="chennai" && x==true){cost=5624;}else if(z=="mumbai" && a=="chennai" && x==false){cost=9987;}
+if(z=="chennai" && a=="rajahmundary" && x==true){cost=5356;}else if(z=="chennai" && a=="rajahmundary" && x==false){cost=4569;}
+if(z=="rajahmundary" && a=="chennai" && x==true){cost=5021;}else if(z=="rajahmundary" && a=="chennai" && x==false){cost=11252;}
+if(z=="chennai" && a=="goa" && x==true){cost=6821;}else if(z=="chennai" && a=="goa" && x==false){cost=12121;}
+if(z=="goa" && a=="chennai" && x==true){cost=6500;}else if(z=="goa" && a=="chennai" && x==false){cost=13039;}
+
+if(cost==0)
+{
+cost = Math.floor(Math.random()*10000);
+}
+alert("travel  rate  from  " +z+ '  to  ' +a+ '  is  '+ cost*b );
+}
+else
+{
+alert("please enter the details");
+}
+}
+
+</script>
+
+
+<div style="height:90%;width:100%;">
+
+<div style="height:100%;width:66%;float:left;">
+<img src="http://www.travelforsenses.com/wp-content/uploads/2016/01/Emirates-Boeing-777-300-Business-Class.jpg" style="height:100%;width:100%;border:2px solid red">
+<h1 id="meka" style="color:red;font-size:40px" ><i>When It Comes To Us <br>&emsp;&emsp;No One Cares Your Sleep<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;better than us</i><h1>
+</div>
+
+<div style="height:50%;width:34%;float:left">
+<img src="http://cdn.ek.aero/in/english/images/Emirates_A380_Musician_400x300_tcm288-1522366.jpg" style="height:100%;width:100%;border:1px solid white">
+<h1 id="juka" style="color:#e0f7fa;font-size:40px">live your<br>&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;life<h1>
+</div>
+
+<div style="height:50%;width:34%;float:left">
+<img src="http://cdn.ek.aero/in/english/images/Business_Class_03_400x300_tcm288-1588157.jpg" style="height:100%;width:100%;border:1px solid white">
+<h1 id="neka" style="color: #8e44ad ;font-size:40px">you pay us<br>&emsp;&emsp;&emsp;&emsp;we pay you</h1>
+</div>
+
+<center>
+<a href="p.html"><button id="shirt">Click Here To Book A Ticket</button></a>
+</center>
+
+</body>
+</html>

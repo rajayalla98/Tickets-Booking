@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+<head>
+<title>
+Bus
+</title>
+
+<script>
+function fun()
+{
+   x=document.getElementById('a').value;
+   y=document.getElementById('b').value;
+   q=document.getElementById('c').value;
+   w=document.getElementById('d').value;
+   if(q == 0)
+   {
+       alert("enter the date");
+   }  
+   else
+   {
+       
+       if(x==0 || y==0 || w==0)
+       {
+           alert("please check your from/to/no.of persons details properly ");
+       }
+       else
+       {
+         if(x=="chennai" && y=="hyderabad"){z=4500;}
+         if(x=="hyderabad" && y=="chennai" ){z=4000;}
+         if(x=="chennai" && y=="bengaluru" ){z=3200;}
+         if(x=="bengaluru" && y=="chennai" ){z=3000;}
+         if(x=="chennai" && y=="delhi" ){z=6200;}
+         if(x=="delhi" && y=="chennai" ){z=6500;}
+         if(x=="chennai" && y=="mumbai"){z=5388;}
+         if(x=="mumbai" && y=="chennai"){z=5624;}
+         if(x=="chennai" && y=="rajahmundary"){z=5356;}
+         if(x=="rajahmundary" && y=="chennai"){z=5021;}
+         if(x=="chennai" && y=="goa"){z=6821;}
+         if(x=="goa" && y=="chennai"){z=6500;}
+         else
+         {
+           var z=Math.floor(Math.random()*1000);
+         }
+           alert("The cost for your journey from "+ x +" to "+ y +" is "+ z*w);
+       }
+   }
+}
+</script>
+
+<style>
+.bus{
+    background-image: url("http://www.ryylxjw.com/data/out/30/40691711-bus-wallpapers.jpeg");
+    min-height: 700px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bus1{
+    background-image: url("http://www.siwallpaperhd.com/wp-content/uploads/2016/07/classic_vw_combi_bus_wallpaper_hd_1080p.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    min-height: 700px ;
+}
+.button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+}
+#apa
+{
+position:absolute;
+top:100px;
+left:250px;
+width:100%;
+}
+</style>
+</head>
+<body background="">
+<h1 id="apa" style="font-size:50px;color:red">Welcome To Ultimate Bus Travels</h1>
+<div class="bus"></div>
+<div class="hai" background="http://www.hdwallpapernew.in/wp-content/uploads/2015/01/Road-Leading-To-The-Fog-HD-Wallpapers.jpg">
+
+<img src="bus.png" width=100%>
+<center>
+<table cellspacing="20">
+<tr>
+<td>Up to Rs 200 cash back<br>
+<center>
+<img src="https://st.redbus.in/Images/carousel/Offer-Tiles-freecharge.png"><br>
+</center>pay using freecharge<br>
+<small>code no:5543D</small>
+</td>
+<td>Up to Rs 150 cash back<br>
+<center>
+<img src="https://s2.rdbuz.com/web/images/Offers/Offers_Hotels.png"><br>
+</center>
+Pay by using debit card or aadhar card<br>
+<small>code no:5543E</small></td></tr></table></center><br>
+<p></p>
+<center>
+<h2>WE HAVE THE FOLLOWING FACILITIES</h2><p></p>
+<table>
+<tr><td>Rest Stops<br><tr>
+<td><img src="https://s3.rdbuz.com/web/images/home/rest_stops.png"></td><td><small>Rest stops are made so<br>that the passengers may<br>refresh and get informa<br>tion that may be useful<br>to them</small></td></tr></td>
+<td>WIFI system<br>
+<tr><td><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT86RINvh4S06hw1BWUpU2HFIH48oW5I7ar10OJDX9a0XwqOTfp" height=150 width=150></td><td><small>This facility is to<br>provide the passenger<br>with the usage of fb<br>and whatsapp</small></td></tr></td></tr>
+</table>
+</center>
+<p></p><p></p>
+<div class="bus1"></div>
+<center><h2>BOOKING TICKETS ON OUR TRAVELS</h2></center><br>
+<hr>
+-->Our travels operates Buses on about 2 Routes.<br>
+-->Bus type operated by our bus service includes non A/C seater (2x1).<br>
+-->Largest number of our bus service are operated between Chennai and Hyderabad.<br>
+<p></p><p></p>
+<center>
+<h2>TO KNOW MORE INFORMATION ABOUT BUSES<br>
+fill the following<br></h2>
+<form>
+<input type='text' id='a' placeholder='from'>&emsp;
+<input type='text' id='b' placeholder='to'>&emsp;
+<input type='number' id='c' size='10' placeholder='date of journey'>ddmmyyyy&emsp;
+<input type="number" id='d' placeholder='no.of persons'><br>
+<p></p>
+<button onclick="fun()" class="button">submit</button>&emsp;
+<button onclick="reload" class="button">reset</button>
+</form>
+</center>
+<p></p><p></p>
+<h2><center>To book tickets click on the button<center></h2>
+
+<center><a target="_blank" href="busform.html" style="text-decoration:none;color:white"><button class="button">click here!</button></center>
+</div>
+</body>
+</html>

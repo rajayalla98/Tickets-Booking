@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>
+Busform
+</title>
+</head>
+<body bgcolor="#456282">
+
+<form>
+<center><h2> Travel Information Form </h2><br>
+<hr>
+<h2> Contact Information </h2></center><br>
+<p></p>
+
+<p>
+Gender:<br>
+<select>
+<option value="Male">Male</option>
+<option value="Female">Female</option>
+<option value="Others">Others</option>
+</select> </p>
+<strong>Contact Name:</strong><br>
+<input type="text" placeholder="firstname">
+<input type="text" placeholder="Last name"><br><br>
+<strong>Birth Date:</strong><br>
+
+day<select id="date"name="txtBday"></select>&emsp;
+Month<select id="month" name="txtBmo">
+</select>&emsp;
+year<input type="date" style="width: 100px" name="txtByr"size="4" >
+
+<script>
+var options = "";
+for(var date = 1 ; date <=31; date++){
+  options += "<option>"+ date +"</option>";
+}
+document.getElementById("date").innerHTML = options;
+</script>
+<script>
+var options = "";
+for(var month = 1 ; month <=12; month++){
+  options += "<option>"+ month +"</option>";
+}
+document.getElementById("month").innerHTML = options;
+</script>
+<br><br>
+ <i>E-mail</i>: <input type="email" name="email" autocomplete="off" placeholder="xyz@gmail.com"><br><br>
+ <i>Phone Number: </i> <input type="phonenumber" value="" size="10" placeholder="10 digit number"><br><hr>
+<center><h2>Travel Information</h2></center>
+from:<input type="text" value="">
+to:<input type="text" value=""><br><br>
+date & time </i>
+
+<input type="day" placeholder="day" size="2">-
+<input type="month" placeholder="month" size="2">-
+<input type="year" placeholder="year" size="4"> at <select>
+<option value="hour"> hour </option>
+ <option value="1"> 1 </option>
+<option value="2"> 2 </option>
+<option value="3"> 3 </option>
+<option value="4"> 4 </option>
+<option value="5"> 5 </option>
+<option value="6"> 6 </option>
+<option value="7"> 7 </option>
+<option value="8"> 8 </option>
+<option value="9"> 9 </option>
+<option value="10"> 10 </option>
+<option value="11"> 11 </option>
+<option value="12"> 12 </option>
+ </select>:
+ <select>
+<option value="min"> min </option>
+ <option value="00"> 00 </option>
+<option value="10"> 10</option>
+<option value="20"> 20 </option>
+<option value="30"> 30 </option>
+<option value="40"> 40</option>
+<option value="50"> 50</option>
+ </select>
+  <select>
+<option value="AM"> AM </option>
+ <option value="PM"> PM </option>
+ </select><br><br>
+ Type of bus : 
+ <select>
+ <option value=" "></option>
+ <option value="Economic class ">Volvo</option>
+ <option value="Business class ">Benz</option>
+ <option value="First class">TATA</option>
+ <option value="ness class ">others</option></select><br><br>
+ Additional Information:<br>
+<textarea rows="10" cols="50" placeholder="write here..."></textarea><br>
+<center>
+<input type="submit" value="book ticket" onclick="alert('sorry there is an error in the information')">  &emsp;
+<input type="reset" value="reset" name="reset"> </center>
+</form>
+</body>
+</html>
+
